@@ -31,5 +31,16 @@ function goPrev(e) {
     recheck()
 }
 
+function recheck() {
+    if(length == 0) prevBtn.classList.add('disabled') 
+    
+    if (length > 0 && length < 96) {
+        prevBtn.classList.remove('disabled')
+        nextBtn.classList.remove('disabled')
+    }
+    
+    if (length == 96) nextBtn.classList.add('disabled')
+}
+
 nextBtn.addEventListener('click', goNext);
 prevBtn.addEventListener('click', goPrev);
