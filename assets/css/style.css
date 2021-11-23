@@ -107,53 +107,65 @@ li {
   max-width: 1350px;
   width: 86%; 
   margin: 0 auto;
-}
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
+} 
 
 /*=================================
   main styling starts here
 =================================*/
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
+.wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
+.progress li {
+  padding: 4px 8px;
+  margin-right: 60px;
+  border: 4px solid #e0e0e0;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 14px;
+  z-index: 10;
+}
 
+.progress li:nth-of-type(4) { margin-right: 0; }
 
+.grey-line {
+  width: 90%;
+  border: 2px solid #e0e0e0;
+  position: absolute;
+  top: 13px;
+  z-index: -20;
+  transition: 1s ease forwards;
+}
 
+.blue-line {
+  width: 0;
+  border: 2px solid #3498db;
+  position: absolute;
+  top: -2px;
+  font-size: 0;
+  z-index: -10;
+}
 
 
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
