@@ -163,6 +163,32 @@ main {
   z-index: -10;
 }
 
+.btns { margin-top: 40px; }
+.btns li { margin: 0 10px; }
+
+.btns li a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #3498db;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btns li a:hover {
+  background: #15669c;
+  transition: .5s ease;
+}
+
+.btns li a.disabled {
+  background: #e0e0e0;
+  cursor: no-drop;
+}
+
+.progress li.active {
+  border-color: #3498db;
+}
+.progress li.speed { transition: 1s ease; }
+.blue-line.speed { transition: .6s ease; }
 
 /*=================================
   main styling ends here
